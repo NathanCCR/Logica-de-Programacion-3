@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<h1>Asi se ve un Creeper en un canvas</h1>	
+
+<canvas width="350" height="300"></canvas>
+
+
+<script>
+	
+	var lienzo = document.querySelector("canvas");
+    var pincel = lienzo.getContext("2d");
+
+    //Cuadrado 1
+    pincel.fillStyle = "darkgreen";
+    pincel.fillRect(0,0,350,300);
+
+    //Cuadrado 2
+    pincel.fillStyle = "black";
+    pincel.fillRect(50,60,90,90);
+
+    //Cuadrado 3
+    pincel.fillStyle = "black";
+    pincel.fillRect(210,60,90,90);
+
+    //Cuadrado 4
+    pincel.fillStyle = "black";
+    pincel.fillRect(140,150,70,100);
+
+    //Cuadrado 5
+    pincel.fillStyle = "black";
+    pincel.fillRect(100,190,40,110);
+
+    //Cuadrado 6
+    pincel.fillStyle = "black";
+    pincel.fillRect(210,190,40,110);
+</script>

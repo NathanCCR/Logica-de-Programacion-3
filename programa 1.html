@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+<h1>¡COSTA RICA!</h1>
+
+<h2>¡Pura Vida!</h2>
+<canvas width = "600" height="400"></canvas>
+
+<script>
+
+    var lienzo = document.querySelector("canvas");
+    var pincel = lienzo.getContext("2d");
+
+    pincel.fillStyle = "blue";
+    pincel.fillRect(0,0,600,80);
+
+    pincel.fillStyle = "white";
+    pincel.fillRect(0,80,600,160);
+
+    pincel.fillStyle = "red";
+    pincel.fillRect(0,160,600,240);
+
+    pincel.fillStyle = "white";
+    pincel.fillRect(0,240,600,320);
+
+    pincel.fillStyle = "blue";
+    pincel.fillRect(0,320,600,400);
+
+    pincel.fillStyle = "black";
+    pincel.beginPath();
+    pincel.moveTo(300,200);
+    pincel.lineTo(200,400);
+    pincel.lineTo(400,400);
+    pincel.fill();
+
+    pincel.fillStyle = "blue";
+    pincel.beginPath();
+    pincel.arc(300,200,50,0,2*3.14);
+    pincel.fill();
+
+</script>
